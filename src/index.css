@@ -2,8 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    background-color: linear-gradient(
+body,
+button[type="submit"],
+button {
+    background: linear-gradient(
         130deg,
         rgba(52, 166, 211, 1) 0%,
         rgba(85, 82, 159, 1) 100%
