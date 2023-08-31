@@ -1,10 +1,11 @@
+import { Link } from "react-router-dom";
 import Button from "../components/Button";
 import Input from "../components/Input";
 
 export default function Signin() {
 
     return (
-        <div className="flex flex-col items-center justify-around bg-zinc-900 rounded p-8 w-[35rem] h-[35rem]">
+        <div className="flex flex-col items-center justify-around bg-zinc-900 rounded-lg p-8 w-[35rem] h-[35rem]">
            <form className="flex flex-col justify-center gap-4 w-full text-2xl">
             <Input type="email" placeholder="Email"/>
             <Input type="password" placeholder="Password"/>            
@@ -12,7 +13,7 @@ export default function Signin() {
            </form>
 
            <p className="text-white text-2xl">
-            Don't have an account? Register
+            Don't have an account? <Link to="/signup" className="text-sky-400 hover:text-sky-600">Register</Link>{""}
            </p>
         </div>
     );
